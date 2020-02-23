@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "watch": "tsc --watch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react-native": "^0.61.5"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.61.16",
+    "typescript": "^3.8.2"
+  }
+}
