@@ -66,7 +66,7 @@ For development, you should install these CLI tools:
 
 ## Meta
 
-Your Name – [@ZaferAyan](https://twitter.com/ZaferAyan) – [ozcanzaferayan@gmail.com]()
+Zafer AYAN – [@ZaferAyan](https://twitter.com/ZaferAyan) – [ozcanzaferayan@gmail.com]()
 
 Distributed under the MIT license. See `LICENSE` for more information.
 
