@@ -21,6 +21,7 @@ OS X:
 ```sh
 yarn install
 cd packages/mobile
+npm install -g wml
 wml add ../common ./node_modules/@monorepo/common
 open . -a iterm && wml start
 open . -a iterm && yarn watch
