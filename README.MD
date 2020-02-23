@@ -24,7 +24,7 @@ cd packages/mobile
 wml add ../common ./node_modules/@monorepo/common
 open . -a iterm && wml start
 open . -a iterm && yarn watch
-open . -a iterm && cd ../mobile && npx react-native run-ios -- --reset-cache
+open . -a iterm && cd ../mobile && cd ios && pod install && cd ../ && npx react-native run-ios -- --reset-cache
 open . -a iterm && cd ../web && yarn start
 cd ../../ && code .
 ```
