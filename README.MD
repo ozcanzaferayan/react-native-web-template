@@ -1,4 +1,4 @@
-# Product Name
+# React Native Web Template
 
 > React Native template project for creating iOS, Android and Web apps
 
