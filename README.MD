@@ -10,9 +10,9 @@ With this monorepo project, you can develop mobile & web projects with React Nat
 
 ![](https://github.com/ozcanzaferayan/react-native-web-template/blob/master/art/banner.jpg?raw=true)
 
-## Usage of this Template
+## How this template created?
 
-You can check out [Github blog post](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+You can check out this Turkish [Github blog post](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 
 ## Usage
 
