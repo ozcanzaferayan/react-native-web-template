@@ -16,7 +16,7 @@ You can check out this Turkish [Github blog post](https://help.github.com/en/git
 
 ## Usage
 
-OS X:
+### OS X:
 
 ```sh
 yarn install
@@ -24,22 +24,33 @@ cd packages/mobile
 npm install -g wml
 wml add ../common ./node_modules/@monorepo/common
 open . -a iterm && wml start
-open . -a iterm && yarn watch
+open . -a iterm && cd ../common && yarn watch
 open . -a iterm && cd ../mobile/ios && pod install && cd ../ && npx react-native run-ios -- --reset-cache
 open . -a iterm && cd ../web && yarn start
 cd ../../ && code .
 ```
 
-Windows:
-!! Not well tested on Windows
-wml not working on windows so you can use Grunt instead of wml.
+### Windows:    
+Notes:  
+* wml is not working on windows so you can use Grunt instead of wml.
+* iterm is not exist in windows. Therefore you can use cmder instead of iterm.
+* Cmder has no duplicate tab command. So you can duplicate tabs manually by right clicking current tab and selecting "Restart or duplicate" > "Duplicate root"
 
 ```sh
+yarn install
 cd packages/common
 npm install grunt --save-dev
 npm install grunt-contrib-watch --save-dev
 npm install grunt-sync --save
 grunt --watch
+# Duplicate tab
+cd ../common && yarn watch
+# Duplicate tab
+cd ../mobile && npx react-native run-android -- --reset-cache
+# Duplicate tab
+cd ../web && yarn start
+# Duplicate tab
+code .
 ```
 
 ## Development setup
