@@ -37,12 +37,7 @@ Notes:
 * Cmder has no duplicate tab command. So you can duplicate tabs manually by right clicking current tab and selecting "Restart or duplicate" > "Duplicate root"
 
 ```sh
-yarn install
-cd packages/common
-npm install grunt --save-dev
-npm install grunt-contrib-watch --save-dev
-npm install grunt-sync --save
-grunt --watch
+yarn install && cd packages/common && npm install grunt --save-dev && npm install grunt-contrib-watch --save-dev && npm install grunt-sync --save && grunt --watch
 # Duplicate tab
 cd ../common && yarn watch
 # Duplicate tab
@@ -51,6 +46,29 @@ cd ../mobile && npx react-native run-android -- --reset-cache
 cd ../web && yarn start
 # Duplicate tab
 code .
+```
+
+## Adding library to common module
+If you added library to common module like react-native-svg, you have to add that library into mobile package. And nohoist array.
+
+```json
+{
+  "name": "mobile",
+  "workspaces": {
+    "nohoist": [
+      "react-native",
+      "react-native/**",
+      "react-native-svg",
+      "react-native-svg/**"
+    ]
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-native": "0.60.5",
+    "react-native-svg": "^11.0.1"
+  }
+}
+
 ```
 
 ## Development setup
